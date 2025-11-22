@@ -1,19 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Page Title</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonas Christiaens | Portfolio</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <!-- Banner -->
+    <header class="banner"></header>
 
-<h1>My Website</h1>
-<p>A website created by me.</p>
+    <!-- Main Intro -->
+    <section class="text-center mt-4">
+        <h1 class="mb-0">Jonas Christiaens</h1>
+        <h2 class="text-muted fs-5">Game Developer</h2>
+    </section>
 
+    <!-- Main Grid: Current Me | Logo | Past Me -->
+    <section class="container my-5">
+        <div class="row g-4 align-items-center info-grid">
+
+            <div class="col-12 col-md-4">
+                <div class="equal-panel info-window current-me">
+                    <h3>Current Me</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 d-flex flex-column align-items-center justify-content-center logo-section position-relative">
+                <div id="logo" class="circular-logo">
+                    <img src="assets/images/logo.png" alt="Logo" class="img-fluid rounded-circle"/>
+                    <span class="hover-diagonal-label pulsate-text">Hover me</span>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-4">
+                <div class="equal-panel info-window past-me">
+                    <h3>Past Me</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Panel -->
+    <section class="container my-4">
+        <div class="row">
+            <div class="col-12">
+                <div class="equal-panel skills-window">
+                    <h3>My current skills</h3>
+                    <ul>
+                       <grid>
+                          <li>Lorem ipsum dolor sit amet</li>
+                          <li>Lorem ipsum dolor sit amet</li>
+                          <li>Lorem ipsum dolor sit amet</li>
+                          <li>Lorem ipsum dolor sit amet</li>
+                          <li>Lorem ipsum dolor sit amet</li>
+                          <li>Lorem ipsum dolor sit amet</li>
+                          <li>Lorem ipsum dolor sit amet</li>
+                       </grid>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Panel -->
+    <section class="container mb-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10">
+                <div class="equal-panel contact-window d-flex align-items-center justify-content-between flex-wrap">
+                    <span>Contact me:</span>
+                    <div class="contact-links d-flex gap-3">
+                        <a class="btn btn-outline-secondary rounded-circle" href="https://github.com/JonasChristiaens">github</a>
+                        <a class="btn btn-outline-secondary rounded-circle" href="https://linkedin.com/in/JonasChristiaens">LinkedIn</a>
+                        <a class="btn btn-outline-secondary rounded-circle" href="mailto:youremail@example.com">Email</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

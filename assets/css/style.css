@@ -1,0 +1,141 @@
+body {
+    background-color:#343342;
+}
+
+.banner {
+    width: 100vw;
+    max-width: 100%;
+    height: 300px;
+    overflow: hidden;
+    background-image: url('../images/banner.png');
+    background-size: cover;
+    background-position: center 50%;
+    margin: 0;
+    padding: 0;
+}
+
+.equal-panel {
+    border-radius: 20px;
+    min-height: 240px;
+    background:#27292E;
+    box-shadow: 0 2px 12px rgba(0,0,0,.08);
+    padding: 24px;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.skills-window, .contact-window, .project-info, .challenge-info {
+    min-height: 120px;
+    margin-top: 20px;
+}
+
+.info-window {
+    min-height: 300px;
+}
+
+.circular-logo {
+    width: 140px;
+    height: 140px;
+    background: #444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: relative;
+}
+
+.hover-diagonal-label {
+    position: absolute;
+    font-weight: bold;
+    pointer-events: none;
+    transform: rotate(25deg);
+    background: rgba(255,255,255,0.8);
+    padding: 2px 8px;
+    border-radius: 8px;
+    top: -5px;
+    right: -40px;
+}
+
+.pulsate-text {
+    animation: pulsate 1.5s infinite;
+    color: #555;
+    font-size: 1.2em;
+}
+
+@keyframes pulsate {
+    0% {text-shadow: 0 0 5px #00aaff;}
+    50% {text-shadow: 0 0 20px #00aaff;}
+    100% {text-shadow: 0 0 5px #00aaff;}
+}
+
+.curved-arrow {
+    margin-top: 2px;
+    pointer-events: none;
+}
+
+.contact-links .btn {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    font-size: 1em;
+}
+
+.floating-window {
+    position: absolute;
+    width: 200px;
+    height: 80px;
+    background: #1A1818;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.18);
+    text-align: center;
+    line-height: 80px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s;
+    z-index: 15;
+}
+.floating-show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.info-grid, .skills-window, .contact-window {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s, transform 0.6s;
+}
+.show {
+    opacity: 1;
+    transform: none;
+}
+.logo-blur {
+    filter: blur(6px);
+    opacity: 0.3;
+}
+
+.project-media img, .project-media video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 14px;
+    border: 2px solid #ccc;
+}
+
+@media (max-width: 768px) {
+    .equal-panel, .skills-window, .contact-window,
+    .project-info, .challenge-info {
+        min-height: 160px;
+        padding: 16px;
+    }
+    .circular-logo {
+        width: 80px;
+        height: 80px;
+    }
+    .info-window {
+        min-height: 180px;
+    }
+}
