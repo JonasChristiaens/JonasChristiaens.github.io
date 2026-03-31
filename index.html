@@ -1,123 +1,415 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jonas Christiaens | Portfolio</title>
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-    <!-- Banner -->
-    <header class="banner"></header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jonas Christiaens</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-    <!-- Main Intro -->
-    <section class="text-center mt-4">
-        <h1 class="mb-0">Jonas Christiaens</h1>
-        <h2 class="text-muted fs-5">Game Developer</h2>
-    </section>
-
-    <!-- Main Grid: Current Me | Logo | Past Me -->
-    <section class="container my-5">
-        <div class="row g-4 align-items-center info-grid">
-
-            <div class="col-12 col-md-4 d-flex">
-                <div class="equal-panel info-window current-me w-100">
-                    <h3>Current Me</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-4 d-flex flex-column align-items-center justify-content-center logo-section position-relative">
-                <div id="logo" class="circular-logo">
-                    <img src="assets/images/logo.png" alt="Logo" class="img-fluid rounded-circle">
-                    <span class="hover-diagonal-label pulsate-text">Hover me</span>
-                </div>
-            </div>
-            
-            <div class="col-12 col-md-4 d-flex">
-                <div class="equal-panel info-window past-me w-100">
-                    <h3>Past Me</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                </div>
-            </div>
+  <body>
+    <header id="header" class="header">
+      <div class="container container-lg">
+        <div class="header-nav">
+          <nav id="nav" class="nav">
+            <ul class="nav-list" data-aos="fade-down" data-aos-duration="1000">
+              <li class="nav-item">
+                <a href="#home" class="nav-link active">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#projects" class="nav-link">Works</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link">Contact</a>
+              </li>
+            </ul>
+            <button id="nav-btn" class="nav-btn">
+              <img
+                id="nav-btn-img"
+                src="img/icons/open.svg"
+                alt="Navigation button"
+              />
+            </button>
+          </nav>
         </div>
-    </section>
+      </div>
+    </header>
 
-    <!-- Skills Panel -->
-    <section class="container my-4">
-        <div class="row">
-            <div class="col-12">
-                <div class="equal-panel skills-window">
-                    <div class="skills-header">
-                        <h3>My current skills</h3>
-                    </div>
-                    <div class="skills-categories">
-                        <div class="skill-category">
-                            <h4>Category 1</h4>
-                            <ul>
-                                <li>Lorem ipsum dolor sit amet</li>
-                                <li>Lorem ipsum dolor sit amet</li>
-                                <li>Lorem ipsum dolor sit amet</li>
-                            </ul>
-                        </div>
-                        <div class="skill-category">
-                            <h4>Category 2</h4>
-                            <ul>
-                                <li>Lorem ipsum dolor sit amet</li>
-                                <li>Lorem ipsum dolor sit amet</li>
-                                <li>Lorem ipsum dolor sit amet</li>
-                            </ul>
-                        </div>
-                        <div class="skill-category">
-                            <h4>Category 3</h4>
-                            <ul>
-                                <li>Lorem ipsum dolor sit amet</li>
-                                <li>Lorem ipsum dolor sit amet</li>
-                                <li>Lorem ipsum dolor sit amet</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+    <section id="home" class="hero">
+      <div class="container container-lg">
+        <div
+          class="hero-row"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-out"
+          data-aos-delay="500"
+          data-aos-duration="1000"
+        >
+          <div class="hero-content">
+            <span class="hero-greeting"> Hello, I am</span>
+            <h1 class="hero-heading">Jonas Christiaens</h1>
+            <span class="hero-heading-subtitle"
+              >Student & Aspiring Game Developer</span
+            >
+            <div class="about-social-list">
+              <div class="social-links-row">
+                <a href="https://github.com/JonasChristiaens">
+                  <img
+                    src="img/social_icons/github.svg"
+                    alt="Link to GitHub account"
+                  />
+                </a>
+
+                <a href="https://www.linkedin.com/in/jonas-christiaens/">
+                  <img
+                    src="img/social_icons/linkedin.svg"
+                    alt="Link to linkedin profile"
+                  />
+                </a>
+              </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Contact Panel -->
-    <section class="container mb-5">
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-10">
-                <div class="equal-panel contact-window d-flex align-items-center justify-content-between flex-wrap gap-3">
-                    <span class="mb-2 mb-md-0">Contact me:</span>
-                    <div class="contact-links d-flex flex-wrap gap-3">
-                        <a class="btn btn-light" href="https://github.com/JonasChristiaens">
-                            <img src="assets/images/github-sign.png" alt="github logo" class="contact-icon">
-                        </a>
-                        <a class="btn btn-light" href="https://www.linkedin.com/in/jonas-christiaens">
-                            <img src="assets/images/linkedin.png" alt="linkedin logo" class="contact-icon">
-                        </a>
-                        <a class="btn btn-light" href="mailto:ChristiaensJonas3@gmail.com">
-                            <img src="assets/images/gmail.png" alt="gmail logo" class="contact-icon">
-                        </a>
-                    </div>
-                </div>
+            <div>
+              <a href="#projects" class="btn">My Portfolio</a>
+              <a href="#contact" class="btn btn-white">Contact Me</a>
             </div>
+          </div>
+          <div class="hero-img">
+            <img src="img/hero/Jonas.png"/>
+          </div>
         </div>
+      </div>
     </section>
 
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/script.js"></script>
-</body>
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-title">
+          <h2 class="title">About Me</h2>
+        </div>
+        <div class="about-row">
+          <div
+            class="about-content"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <p class="about-descr">
+              Hi, I’m a game development student with a strong interest in C++ and real-time graphics programming. 
+              I’m particularly drawn to low-level engine development and enjoy learning how rendering systems and game engines work under the hood.
+              I’ve been exploring tools like Unity, Unreal, and graphics APIs such as Vulkan and DirectX through hands-on projects and experiments.
+              <br /><br />Let’s build something great together!
+            </p>
+            <div class="about-download-btn">
+              <a href="img/CV/Christiaens_Jonas_Resume.pdf" target="_blank" class="btn btn-white">Download CV</a>
+            </div>
+          </div>
+          <div
+            class="about-skills"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
+            <div class="skill">
+              <div class="skill-title">C++ & CMake </div>
+              <div class="skill-percent">80%</div>
+              <div class="skill-bar__progress">
+                <div class="skill-bar__fill" data-progress="80"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-title">C# / Unity & Unreal</div>
+              <div class="skill-percent">75%</div>
+              <div class="skill-bar__progress">
+                <div class="skill-bar__fill" data-progress="75"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-title">Lua</div>
+              <div class="skill-percent">60%</div>
+              <div class="skill-bar__progress">
+                <div class="skill-bar__fill" data-progress="60"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-title">Gameplay & AI Engineering</div>
+              <div class="skill-percent">80%</div>
+              <div class="skill-bar__progress">
+                <div class="skill-bar__fill" data-progress="80"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-title">Vulkan & DirectX</div>
+              <div class="skill-percent">70%</div>
+              <div class="skill-bar__progress">
+                <div class="skill-bar__fill" data-progress="70"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <div class="container container-lg">
+        <div class="projects-title">
+          <h2 class="title">Works</h2>
+        </div>
+
+        <div class="projects-row">
+          <div
+            class="project-box"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="1000"
+          >
+            <a href="#!" class="project-link" 
+               data-title="Vulkan Scene Renderer" 
+               data-video="https://www.youtube.com/watch?v=TL-Zw7tZhUI" 
+               data-desc="This project involves rendering a 3D scene using the Vulkan graphics API." 
+               data-learned="I learned about low-level graphics programming, memory management, and pipeline states."
+               data-link="https://github.com/JonasChristiaens/GP_Vulkan"
+               data-link-text="View on Github">
+              <img class="project-img" src="img/works/VulkanSceneRenderer.gif" alt="" />
+              <div class="project-mask">
+                <div class="project-caption">
+                  <h5 class="white">Vulkan Scene Renderer</h5>
+                  <p class="white">Graphics Programming</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class="project-box"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="300"
+            data-aos-duration="1000"
+          >
+            <a href="#!" class="project-link" 
+               data-title="Dual Rasterizer" 
+               data-video="https://www.youtube.com/watch?v=g8CrvtRoVRA" 
+               data-desc="A dual rasterizer project exploring software and hardware rendering techniques." 
+               data-learned="I learned about rasterization algorithms, barycentric coordinates, and performance optimizations."
+               data-link="https://github.com/JonasChristiaens/GP1_DualRasterizer"
+               data-link-text="View on Github">
+              <img class="project-img" src="img/works/DualRasterizer.png" alt="" />
+              <div class="project-mask">
+                <div class="project-caption">
+                  <h5 class="white">Dual Rasterizer</h5>
+                  <p class="white">Graphics Programming</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class="project-box"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="600"
+            data-aos-duration="1000"
+          >
+            <a href="#!" class="project-link" 
+               data-title="Zombie Survival Agent" 
+               data-video="https://www.youtube.com/watch?v=Qa66mYksi3g" 
+               data-desc="An AI agent designed for a zombie survival game." 
+               data-learned="I learned about pathfinding, state machines, and behavior trees."
+               data-link="https://github.com/JonasChristiaens/GPP_ExamProject"
+               data-link-text="View on Github">
+              <img class="project-img" src="img/works/ZombieSurvivalGame.png" alt="" />
+              <div class="project-mask">
+                <div class="project-caption">
+                  <h5 class="white">Zombie Survival Agent</h5>
+                  <p class="white">Game Development</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class="project-box"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="900"
+            data-aos-duration="1000"
+          >
+            <a href="#!" class="project-link" 
+               data-title="Reel Or Nothing!" 
+               data-video="https://www.youtube.com/watch?v=4B4SiHHXRAY" 
+               data-desc="An academic game project focusing on fast-paced mechanics." 
+               data-learned="I learned about game loops, collision detection, and teamwork."
+               data-link="https://jordi16m.itch.io/reelornothing"
+               data-link-text="Check out our Itch page!">
+              <img class="project-img" src="img/works/ReelOrNothing.jpg" alt="" />
+              <div class="project-mask">
+                <div class="project-caption">
+                  <h5 class="white">Reel Or Nothing!</h5>
+                  <p class="white">Academic Game Projects</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class="project-box"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="1200"
+            data-aos-duration="1000"
+          >
+            <a href="#!" class="project-link" 
+               data-title="The Garden" 
+               data-video="https://www.youtube.com/watch?v=V9djqcxqvjo" 
+               data-desc="A stylistic game project with unique rendering." 
+               data-learned="I learned about shaders, visual effects, and art direction.">
+              <img class="project-img" src="img/works/TheGarden.png" alt="" />
+              <div class="project-mask">
+                <div class="project-caption">
+                  <h5 class="white">The Garden</h5>
+                  <p class="white">Academic Game Projects</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class="project-box"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="1500"
+            data-aos-duration="1000"
+          >
+            <a href="#!" class="project-link" 
+               data-title="JEngine" 
+               data-video="https://www.youtube.com/watch?v=PJ2AYMkNVwM" 
+               data-desc="A personal game engine built from scratch." 
+               data-learned="I learned about architectural patterns, component systems, and resource management."
+               data-link="https://github.com/JonasChristiaens/JEngine"
+               data-link-text="View what I'm currently working on!">
+              <img class="project-img" src="img/works/PersonalEngine.png" alt="" />
+              <div class="project-mask">
+                <div class="project-caption">
+                  <h5 class="white">JEngine</h5>
+                  <p class="white">Engine Development</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="contact-title">
+          <h2 class="title">Contact</h2>
+        </div>
+        <div class="contact-content">
+          <p>
+            Let's talk and work together!
+          </p>
+        </div>
+
+        <form class="contactForm" data-aos="zoom-in" data-aos-duration="1000">
+          <div class="input-box">
+            <input type="text" name="name" placeholder="Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              required
+            />
+          </div>
+
+          <textarea
+            name="message"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <div
+            class="contact-button"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="500"
+            data-aos-duration="1000"
+          >
+            <button href="#!" class="btn btn-red" name="submit" type="submit">
+              Send Message
+            </button>
+          </div>
+        </form>
+        <div class="response"></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-row">
+          <div class="social-links-row footer-social">
+            <a href="https://github.com/JonasChristiaens" target="_blank">
+              <img
+                src="img/social_icons/github.svg"
+                alt="Link to GitHub account"
+              />
+            </a>
+
+            <a href="https://www.linkedin.com/in/jonas-christiaens/" target="_blank">
+              <img
+                src="img/social_icons/linkedin.svg"
+                alt="Link to linkedin profile"
+              />
+            </a>
+          </div>
+
+          <div class="footer-copyright">
+            <p>&copy; Copyright John Sample 2024</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="goToTop" class="goToTop">
+      <a href="#home">
+        <img src="img/icons/arrow_up.svg" alt="Back to top"
+      /></a>
+    </div>
+
+    <div id="project-sidebar-overlay" class="project-sidebar-overlay"></div>
+    <div id="project-sidebar" class="project-sidebar">
+      <button id="sidebar-close-btn" class="sidebar-close-btn">&times;</button>
+      <div class="sidebar-content">
+        <h2 id="sidebar-title">Project Title</h2>
+        <div class="sidebar-text">
+          <h3>About the Project</h3>
+          <p id="sidebar-desc">Project description goes here.</p>
+        </div>
+        <div class="sidebar-video-container">
+          <iframe id="sidebar-video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%; aspect-ratio: 16/9;"></iframe>
+        </div>
+        <div class="sidebar-text">
+          <h3>What I Learned</h3>
+          <p id="sidebar-learned">Learnings go here.</p>
+        </div>
+        <div id="sidebar-link-container" class="sidebar-text" style="display: none; margin-top: 20px;">
+          <a id="sidebar-link" href="#" target="_blank" class="btn btn-red">View Project</a>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="module" src="js/main.js"></script>
+  </body>
 </html>
