@@ -699,7 +699,7 @@ h5 {
   position: fixed;
   top: 0;
   right: -100%;
-  width: 900px;
+  width: 1000px;
   max-width: 90vw;
   height: 100vh;
   background-color: var(--primary-bg-color);

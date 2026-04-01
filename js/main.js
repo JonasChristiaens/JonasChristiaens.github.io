@@ -72,8 +72,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const link = e.currentTarget;
 
     sidebarTitle.textContent = link.getAttribute('data-title');
-    sidebarDesc.textContent = link.getAttribute('data-desc');
-    sidebarLearned.textContent = link.getAttribute('data-learned');
+    sidebarDesc.innerHTML = link.getAttribute('data-desc');
+    sidebarLearned.innerHTML = link.getAttribute('data-learned');
 
     const videoSrc = link.getAttribute('data-video');
     if (videoSrc) {
